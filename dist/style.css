@@ -1,0 +1,173 @@
+body{
+    background-color: #4b8ddf;
+    margin: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.app{
+    border-radius: 20px;
+    background: linear-gradient(145deg,#5f92eb,#0a45aa);
+    color: #fff;
+    margin: 3rem;
+    padding: 1rem 3rem 3rem 3rem;
+    max-width: 30em;
+    animation: appearFromNone 2s ease-in forwards;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-container img{
+    height: 60px;
+    width: 60px;
+    padding: 20px 10px 20px 20px;
+}
+.input-container{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    left: 40px;
+}
+
+.input-container img{
+    height: 30px;
+    width: 30px;
+    padding-right: 3px;
+}
+.input-container input{
+    border-radius: 5px;
+    height: 30px;
+    width: 220px;
+    border: none;
+    outline: none;
+}
+.input-container .button{
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+    position: relative;
+    right: 50px;
+}
+
+.weather-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.temp-value{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+.slider.round > .unknown{
+    display: flex;
+    gap: 20px;
+    color: black;
+    z-index: 2;
+    position: relative;
+    font-size: 12px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .weather-details-container{
+    display: none;
+  }
+  .weather-details-container.active{
+    display: block;
+    font-size: large;
+    padding: 0;
+  }
+
+  .appcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:30px;
+    padding: 30px;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }

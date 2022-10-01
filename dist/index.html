@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app</title>
+    <link rel="icon" href="https://www.feirox.com/rivu/2016/04/Klara-1-1.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <div class="app">
+                <div class="header">
+                    <div class="header-container">
+                        <img src="./weather.png" alt="">
+                        <h1>Current weather</h1>
+                    </div>
+                    <div class="input-container">
+                        <img src="marker.png" alt="">
+                        <input type="text" class="input" placeholder="Type in city....">
+                        <button class="button display-weather-details">
+                            <img src="./magnify.png" alt="">
+                        </button>
+                    </div>
+                </div>
+              <div class="appcontainer">
+                <div class="weather-details-container">
+                    <div class="weather-details">
+                        <div>
+                            <h2 class="location"></h2>
+                        </div>
+                        <div class="temp-value">
+                            <h2 class="temperature"></h2>
+                            <img src="" alt="" class="weather-status-image">
+                        </div>
+                        <div style="text-align: center; padding: 20px;">
+                            <p class="weather-status"></p>
+                            <p class="suntime"></p>
+                        </div>
+                        <div>
+                            <div class="btn-container">
+                                <label class="switch">
+                                    <input type="checkbox" class="checkbox">
+                                    <span class="slider round">
+                                        <div class="unknown">
+                                            <span>C</span>
+                                            <span>F</span>
+                                        </div>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
